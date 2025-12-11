@@ -27,5 +27,9 @@ import 'package:score_advanced/score_adv_lib.dart';
 // void main(List<String> arguments) {}
 
 void main(){
-loadStudentData('students.txt');
+    // List<StudentScore> 학생 정보 불러오기, txt 파일 students에 저장
+    List<StudentScore> studentList = loadStudentData('lib/model/students.txt');
+    for (var student in studentList){
+        student.showInfo();
+    }
 }
