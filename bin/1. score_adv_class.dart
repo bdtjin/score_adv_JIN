@@ -1,4 +1,6 @@
 
+// 1번 문제
+
 // 부모 클래스
 class Score {
   String name = '';
